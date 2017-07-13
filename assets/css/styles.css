@@ -3,7 +3,7 @@ body {
 	overflow-x: hidden;
 	background-color: #EEEEEE;
 }
-body,
+
 html { height: 100%;}
 .nav .open > a, 
 .nav .open > a:hover, 
@@ -301,7 +301,7 @@ html { height: 100%;}
 img{
 	width: 14%;
 	max-width: 100%;
-	background-color: #edecec;
+	background: linear-gradient(to bottom, purple 0%,purple 50%,#000000 50%,white 50%,white 100%); 
 	margin: 6% 2%;
 	padding: 4% 1%;
 }
