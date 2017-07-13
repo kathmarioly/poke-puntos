@@ -2,15 +2,125 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>call-back-promeses</title>
+	<title>Pokedex</title>
+	<meta name=""><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
 
 
-	<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-</html>
+	<div id="wrapper">
+		<div class="overlay"></div>
+
+		<!-- Nabar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+			<ul class="nav sidebar-nav">
+				<li class="sidebar-brand">
+					<h1 class="nav-titulo">Pokedex.org</h1>
+				</li>
+				<hr>
+				<li>
+					<a href="#">Pokemón</a>
+				</li>
+
+				<li>
+					<a href="https://twitter.com/maridlcrmn">About</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<!-- Page Content -->
+
+		<div class="container">
+			<div id="page-content-wrapper">
+				<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+			</div>
+
+			<header>
+				<nav>
+
+				</nav>
+			</header>
+			<section class="section-pokemones">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-xs-12 align text-center">
+							<h1>Pokedex.ORG</h1>               
+						</div>            
+					</div>
+					<div class="row">
+						<div class="flipkart-navbar-search smallsearch col-lg-11 col-md-11 col-xs-12 align text-center col-xs-11 align text-center">
+							<div class="row">
+								<input class="flipkart-navbar-input col-xs-11 align text-center" type="" placeholder="Search you're POKEMON...!" name="">
+								<button class="flipkart-navbar-button col-xs-1">
+									<svg width="15px" height="15px">
+										<path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+			<!-- datos generados por Json en Jquery-->
+			<section class="section-pokemon">
+				<div class="container-fluid">
+					<div class="row"> 
+						<div class="col-lg-12 col-md-12 col-xs-12 text-center">
+							<div class="pokemons"><div class="pokprint"></div></div>
+
+						</div>            
+					</div>
+				</div>
+			</section>
+
+			<!--MODAL-->
+
+			<section class="modal">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								...
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!--script-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<!--Enlazado con mi js-->
+			<script type="text/javascript" src="assets/js/main.js"></script>
+		</body>
+		</html>
